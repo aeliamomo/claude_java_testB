@@ -70,30 +70,32 @@ Many real-world and educational use cases need tools that are:
 
 This project shows that even with minimal dependencies, Java is a capable tool for basic ML.
 
-## Project Structure
 
-minimal-java-ml/
+#  Project Structure
+```bash 
+minimal-python-ml/
 ├── data/
-│ └── sample.csv # Example dataset
+│   └── sample.csv                # Example input dataset
 │
 ├── core/
-│ ├── CSVReader.java # Simple CSV parser
-│ ├── Preprocessor.java # Normalization, encoding, etc.
-│ └── StatisticsUtils.java # Math and statistics utilities
+│   ├── csv_utils.py              # CSV reader and writer
+│   ├── preprocessing.py          # Normalization, encoding, etc.
+│   └── statistics.py             # Basic math and stats utilities
 │
 ├── models/
-│ ├── LinearRegression.java # Linear regression implementation
-│ ├── LogisticRegression.java # Logistic regression implementation
-│ └── KNNClassifier.java # Basic KNN classifier
+│   ├── linear_regression.py      # Linear regression from sklearn
+│   ├── logistic_regression.py    # Logistic regression from sklearn
+│   └── knn.py                    # K-Nearest Neighbors wrapper
 │
 ├── examples/
-│ ├── RegressionExample.java # End-to-end regression usage
-│ └── ClassificationExample.java # End-to-end classification usage
+│   ├── regression_example.py     # End-to-end regression example
+│   └── classification_example.py # End-to-end classification example
 │
 ├── tests/
-│ └── ... # Unit tests using JUnit
+│   └── ...                       # Unit tests using Python's unittest
 │
 ├── README.md
 └── LICENSE
+```
 
 
